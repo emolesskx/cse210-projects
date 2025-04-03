@@ -1,3 +1,6 @@
+// Reference.cs
+using System;
+
 class Reference
 {
     private string _book;
@@ -15,7 +18,7 @@ class Reference
 
     public override string ToString()
     {
-        return _endVerse.HasValue
+        return _endVerse.HasValue 
             ? $"{_book} {_startChapter}:{_startVerse}-{_endVerse}"
             : $"{_book} {_startChapter}:{_startVerse}";
     }
